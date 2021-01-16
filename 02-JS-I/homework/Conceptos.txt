@@ -1,0 +1,74 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Variables
+	* Strings
+	* Funciones (argumentos, `return`)
+	* Declaraciones `if`
+	* Valores booleanos (`true`, `false`)
+
+Variables: 
+Podriamos definir las variables coomo palbras a las que se le asignará un valor que puede ser texto, numero o lógico.  por ejemplo:  
+var animal = 'Gato'; 
+definimos una variable que se llama animal y le asignamo un valor 'gato' , que en este caso es un texto (string).
+var numero = 1.45; 
+definimos una variable que se llama numero y le asignamo un valor (1.45) , que en este caso es un numero (number).
+var Elegir = true;
+definimos una variable que se llama Elegir y le asignamo un valor verdadero (true) , que en este caso es un valor lógico (boolean).
+
+
+Strings: 
+Son datos que representan una cadena de texto, letras, palabras o fraces, que pueden estar contenidos en variables o simplemete utilizados dentro del código con comilla sencilla, por ejemplo 'esto es un string'.
+
+Funciones: 
+Se utilizan para almacenar código y ahorrar tiempro programando, en este ejemplo, seguido de “function” va el nombre de la función que definamos, luego entre paréntesis van la o las variables que componen la función, también pueden haber funciones sin parámetros o variables declaradas.  Dentro de los corchetes va el código que compone la función. Para este ejemplo le pediremos a javascrip que diga mi nombre y edad por log de consola o imprimir por consola.
+	function Presentacion(Nombre, edad) {
+   	console.log('Hola, mi nombre es: ' + Nombre);
+    	console.log('Y tengo ' + edad + ' años');
+	}
+Entonces, la función se utiliza así, en la ubicación del nombre ponemos un texto y en la ubicación de edad ponemos un número:
+	Presentacion(‘Carlos’, 41);  
+Al hacer enter, invocará la función con los datos definidos en esta línea:
+	Hola, mi nombre es: Carlos
+	Y tengo 41 años
+Return:
+Cuando requiero que una función devuelva al programa un valor, debo utilizar la palabra return. Todo el código que exista después de la palabra return, no se ejecutará.
+	function Sumador(a,b) {
+    	return (a+b);
+	}
+Al invocar la función y asignar valores a “a” y “b”, presionando enter se resolverá la operación:
+	sumador(4,5);
+
+
+Declaraciones IF:
+En las funciones y en general el código se puede hacer un control de flujo, es decir que dependiendo de una instrucción se ejecute una parte del código u otra, ya que evalua en orden descendente hasta que que cumpla alguna condición:
+	function PuedeBeber(edad) {
+    	if (edad >=18) {
+    	return true;
+    	}
+    	return false;
+	}
+Al cumplirse la primera condición y encontrar el primer return, la función se ejecuta hasta ahí.  Si la primera consición no se cumple, llegará hasta el siguiente return.
+Según la condición, regresará true si edad es >= a 18.
+	PuedeBeber(18) [enter]
+	True
+Según la condición, regresará false si edad es < a 18.
+	PuedeBeber(15) [enter]
+	False
+
+Anidación de Condicionales:
+
+Cada if va dentro de corchetes, así como cada else y else if. Ejemplo:
+	var edad = 40  [enter] //Declaración variable edad con un valor
+
+	if (edad>=60) {
+	console.log('Viejo')
+	} else if(edad >= 20) {
+	console.log('Adulto')
+	} else {
+	console.log ('Niño')
+	}  
+
+Valores Booleanos:
+Son muy utiles en el momento de hacer comparaciones lógicas ya que al utilizar un IF el resultado para ejecutar el codigo dentro de este depende si se cumple la condición o no.  si se cumple (true) ejecutará el codigo contenido en los corchetes del if, else if o else.
+treu = verdadero
+false = falso
