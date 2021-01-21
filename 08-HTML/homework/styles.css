@@ -1,17 +1,33 @@
 h1 {
-	color: green;
+	color: red;
 }
 
 img{
 	width: 400px; 
 }
 
+body{
+	background-image: url("https://previews.123rf.com/images/kongvector/kongvector1703/kongvector170300535/73648514-colecci%C3%B3n-de-doodles-de-comida-r%C3%A1pida-.jpg")
+}
+.alinear{
+	/*text-align: center;*/
+	display: flex; /*indica que queremos tarbajar con el contenedor o caja de manera flexible, aunque por si mismo no hace nada- METODO FLEX-BOX*/
+	display: -webkit-flex;/*complemento para que flexbox funcione*/
+	display: -ms-flexbox;/*complemento para que flexbox funcione*/
+	flex-direction: column;
+	flex-wrap:  nowrap;
+	justify-content: center;
+	align-items: center;
+}
+div{
+	
+}
 #thirdDiv{
 	height: 600px;
 	width: 500px;
 	background-color: blue;
 	padding: 50px;
-	border:	12px dashed red;	//Tamaño tipoborde color
+	border:	12px solid green;	//Tamaño tipoborde color
 
 }
 #spanId{
