@@ -1,0 +1,20 @@
+h1 {
+	color: green;
+}
+
+img{
+	width: 400px; 
+}
+
+#thirdDiv{
+	height: 600px;
+	width: 500px;
+	background-color: blue;
+	padding: 50px;
+	border:	12px dashed red;	//Tamaño tipoborde color
+
+}
+#spanId{
+	font-size: 18px;
+	margin: 50px;
+}
